@@ -6,7 +6,7 @@ class Artiste(models.Model):
     last_name=models.CharField(max_length=100)
     age=models.IntegerField(null=True)
 
-class Song(models.Model)
+class Song(models.Model):
     title=models.CharField(max_length=100)
     date_released=models.DateField(auto_now_add=True, null=True)
     likes=models.IntegerField(null=True,)
