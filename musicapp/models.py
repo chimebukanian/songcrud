@@ -14,4 +14,4 @@ class Song(models.Model):
 
 class Lyric(models.Model):
     content=models.CharField(max_lenggth=100)
-    song_id=models.ForeignKey(Song, verbose_name=_("song"), on_delete=models.CASCADE)
+    song_id=models.OneToOneField(Song, verbose_name=_("song"), on_delete=models.CASCADE)
